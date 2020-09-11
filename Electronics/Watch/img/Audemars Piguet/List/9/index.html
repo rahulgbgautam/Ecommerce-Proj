@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Product Page</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+		<script src="scripts/jquery.js"></script>
+		
+		<script src="scripts/modernizr.js"></script>
+	</head>
+	<body>
+		<div class="product clear">
+			<header>
+				<hgroup>
+					<h1> AUDEMARS PIGUET </h1>
+
+				</hgroup>
+			</header>
+			<figure>
+				<img src="images/9.jpg">
+			</figure>
+			<section>
+				<p>  ROYAL OAK SELFWINDING CHRONOGRAPH  ₹50,46,000</p>
+
+				<button>Buy Now</button>    				<button> Add To Cart </button> 
+			</section>
+		</div>
+		<script>
+			if ($('html').hasClass('no-details')) {
+				
+				var summary = $('details summary');
+
+				summary.siblings().wrapAll('<div class="slide"></div>');
+
+				$('details:not(.open) summary').siblings('div').hide();
+
+				summary.click(function() { 
+					$(this).siblings('div').toggle();
+	          			$('details').toggleClass('open');
+       			});
+			 }
+		</script>
+
+	</body>
+</html>

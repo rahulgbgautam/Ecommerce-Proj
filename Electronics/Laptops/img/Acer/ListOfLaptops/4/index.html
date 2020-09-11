@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Product Page</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+		<script src="scripts/jquery.js"></script>
+		
+		<script src="scripts/modernizr.js"></script>
+	</head>
+	<body>
+		<div class="product clear">
+			<header>
+				<hgroup>
+					<h1> Acer Aspire 3 Laptop  </h1>
+					<h4>The most amazing Laptop yet.</h4>
+				</hgroup>
+			</header>
+			<figure>
+				<img src="images/4.jpg">
+			</figure>
+			<section>
+				<p> AMD Ryzen 5 Processor/Radeon Vega 8 Graphics Card/8GB RAM/512GB SSD </p>
+				<details>
+					<summary>Product Features</summary>
+						<ul>
+							<li> AMD Ryzen 5-3500U quad-core processor </li>
+							<li> Windows 10 Home 64-bit </li>
+							<li> 8 GB DDR4  memory, upgradable up to 12 GB of DDR4 system memory using single soDIMM module </li>
+							<li> 15.6" Full HD 1920 x 1080, high-brightness Acer ComfyViewTM LEDbacklit TFT LCD </li>
+							<li> AMD Radeon Vega 8 Mobile Graphics </li>
+							<li> MRP : ₹53699.00 (Inclusive of all taxes) </li>
+						</ul>
+				</details>
+				<button>Buy Now</button>   				<button>Buy Now</button>  
+			</section>
+		</div>
+		<script>
+			if ($('html').hasClass('no-details')) {
+				
+				var summary = $('details summary');
+
+				summary.siblings().wrapAll('<div class="slide"></div>');
+
+				$('details:not(.open) summary').siblings('div').hide();
+
+				summary.click(function() { 
+					$(this).siblings('div').toggle();
+	          			$('details').toggleClass('open');
+       			});
+			 }
+		</script>
+
+	</body>
+</html>

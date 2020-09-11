@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="MainPage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+    <div class="topnav">
+        <img src="logo.png" alt="logo" style="width:40px;">
+        <a href="#about">More</a>
+        <a href="#home">Profile</a>
+
+        <input type="text" placeholder="Search..">
+    </div>
+
+    <div>
+        <ul>
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Electronics</a>
+                <div class="dropdown-content">
+                    <a href=" file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Electronics/Phone/Phone.html"> Mobile
+                        Phones</a>
+                    <a
+                        href=" file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Electronics/Laptops/Laptop.html">laptop</a>
+                    <a href=" file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Electronics/Watch/Watch.html"> Watch
+                    </a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Tv & Appliances</a>
+                <div class="dropdown-content">
+                    <a
+                        href=" file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Television%20and%20appliance/Television/Television.html">Television</a>
+                    <a
+                        href="file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Television%20and%20appliance/Camera/Camera.html">camera</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Men</a>
+                <div class="dropdown-content">
+                    <a href="C:/Users/RahulGB/Desktop/Ecommerce Proj/Men/Wear/Wear.html"> Wear </a>
+                    <a href="C:/Users/RahulGB/Desktop/Ecommerce Proj/Men/Products/Products.html">Mens Products </a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Women</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Women/wear/Wear.html"> Wear </a>
+                    <a href="file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Women/Products/Products.html">Womens
+                        Products</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Baby & kids</a>
+                <div class="dropdown-content">
+                    <a
+                        href="file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Baby%20and%20Kids/Toys/clothes.html">Toys</a>
+                    <a
+                        href="file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Baby%20and%20Kids/clothes/clothes.html">Clothes</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Home & Furniture</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Home%20and%20Furniture/Chair/Chair.html">
+                        chair </a>
+                    <a href="file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Home%20and%20Furniture/Bed/Bed.html"> Bed
+                    </a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Sports Bikes & More</a>
+                <div class="dropdown-content">
+                    <a
+                        href=" file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Sports%20Bike%20and%20More/Sports%20Bikes/SportsBikes.html">
+                        Sports Bikes </a>
+                    <a
+                        href=" file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Sports%20Bike%20and%20More/Sports%20Equipments/SportsEquipment.html">
+                        Sports Equipments </a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Offers</a>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+ 
+</body>
+
+</html>

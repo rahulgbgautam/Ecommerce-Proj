@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Product Page</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+		<script src="scripts/jquery.js"></script>
+		
+		<script src="scripts/modernizr.js"></script>
+	</head>
+	<body>
+		<div class="product clear">
+			<header>
+				<hgroup>
+					<h1> Aspire 5|A515-54-34TN </h1>
+					<h4>The most amazing Laptop yet.</h4>
+				</hgroup>
+			</header>
+			<figure>
+				<img src="images/2.jpg">
+			</figure>
+			<section>
+				<p> SKU IN-UN.HN3SI.005 10th Gen Intel® Core™ i3-10110U  Windows 10 Home 64-bit</p>
+				<details>
+					<summary>Product Features</summary>
+						<ul>
+							<li> 10th Gen Intel® Core™ i3-10110U </li>
+							<li> Windows 10 Home 64-bit </li>
+							<li> 4 GB of onboard DDR4 system memory </li>
+							<li> 1TB HDD </li>
+							<li> ACER DAY OFFERS: 1 Year Accidental Damage Protection + 2 Year Extended Warranty + Antivirus & data Recovery Software + BT Headphone/Speaker </li>
+							<li> MRP : ₹64,000.00 (Inclusive of all taxes) </li>
+						</ul>
+				</details>
+				<button>Buy Now</button> 				<button> Add To Cart </button> 
+			</section>
+		</div>
+		<script>
+			if ($('html').hasClass('no-details')) {
+				
+				var summary = $('details summary');
+
+				summary.siblings().wrapAll('<div class="slide"></div>');
+
+				$('details:not(.open) summary').siblings('div').hide();
+
+				summary.click(function() { 
+					$(this).siblings('div').toggle();
+	          			$('details').toggleClass('open');
+       			});
+			 }
+		</script>
+
+	</body>
+</html>

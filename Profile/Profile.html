@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+/*use-itty-bitty-template*/
+body {background: #ececec;}
+h1, h2, h3, h4, h5 {
+  border-bottom: 1px solid #ccc;
+  color: #3F51B5;
+  padding-bottom: 8px
+}
+.container {
+  margin: auto;
+  width: 350px;
+  text-align: center;
+}
+.listFlex {display: flex; justify-content: center;}
+
+img {
+  width: 100%;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+   <h1> Rahul Gautam </h1>
+   <a href="https://imgbb.com/"><img src="1.jpg"  border="0" /></a>
+   <h4>About Me</h4>
+   <p>Hi, I'm Rahul Gautam, I have a huge passion for programming. I love to learn and thrive from challenges.</p>
+   <h4>My Skills</h4>
+   <div class="listFlex">
+      <div>
+         <ul>
+            <li>PHP</li>
+            <li>HTML</li>
+            <li>CSS</li>
+			<li>Bootstrap</li>
+			<li>Mysql</li>
+		
+         </ul>
+      </div>
+      <div>
+         <ul>
+            <li>JavaScript</li>
+            <li>JQuery</li>
+			<li>Python</li>
+			<li>Java</li>
+            <li>Mobile App Developer</li>	
+         </ul>
+      </div>
+   </div>
+
+
+</div>
+
+
+</body>
+
+<script>
+
+const target = {
+  clicked: 0,
+  currentFollowers: 90,
+  btn: document.querySelector("a.btn"),
+  fw: document.querySelector("span.followers")
+};
+
+const follow = () => {
+  target.clicked += 1;
+  target.btn.innerHTML = 'Following <i class="fas fa-user-times"></i>';
+
+  if (target.clicked % 2 === 0) {
+    target.currentFollowers -= 1;
+    target.btn.innerHTML = 'Follow <i class="fas fa-user-plus"></i>';
+  }
+  else {
+    target.currentFollowers += 1;
+  }
+
+  target.fw.textContent = target.currentFollowers;
+  target.btn.classList.toggle("following");
+}
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

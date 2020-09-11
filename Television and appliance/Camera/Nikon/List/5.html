@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 45em;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+    background-color: floralwhite;
+}
+
+
+.container{
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  margin: auto;
+  
+}
+
+
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 40px;
+  height: 30em; /* Should be removed. Only for demonstration */
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 30em; /* Should be removed. Only for demonstration */
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center">Product Card</h2>
+
+<div class="container">
+
+
+<div class="row">
+  
+  <div class="column1" style="background-color:#aaa;">
+  
+			<div class="card">
+				<img src="5.jpg" alt="Denim Jeans" style="width:70%">
+			</div>	
+  </div>
+  
+  <div class="column2" style="background-color:#bbb;">
+
+  <div class="card">
+  
+  <h1>Tailored Jeans</h1>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+
+  </div>
+  
+</div>
+
+
+
+</div>
+
+</body>
+</html>
+
+
+
+

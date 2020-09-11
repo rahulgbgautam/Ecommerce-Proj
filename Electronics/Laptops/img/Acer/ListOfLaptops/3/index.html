@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Product Page</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+		<script src="scripts/jquery.js"></script>
+		
+		<script src="scripts/modernizr.js"></script>
+	</head>
+	<body>
+		<div class="product clear">
+			<header>
+				<hgroup>
+					<h1> Acer Spin 3 Convertible Laptop | SP314-54N With Active Stylus Pen </h1>
+					<h4>The most amazing Laptop yet.</h4>
+				</hgroup>
+			</header>
+			<figure>
+				<img src="images/3.jpg">
+			</figure>
+			<section>
+				<p> SKU IN-NX.HQ7SI.002 Intel® CoreTM i3-1005G1  processor 8 GB of onboard LPDDR4 system memory</p>
+				<details>
+					<summary>Product Features</summary>
+						<ul>
+							<li> Intel® CoreTM i3-1005G1  processor </li>
+							<li> 8 GB of onboard LPDDR4 system memory </li>
+							<li> Windows 10 Home 64-bit </li>
+							<li> Intel® Iris® Plus Graphics </li>
+							<li> Battery life up to 16 hours </li>
+							<li> MRP : ₹ 64,999.00 (Inclusive of all taxes) </li>
+						</ul>
+				</details>
+				<button>Buy Now</button>   				<button> Add To Cart </button> 
+			</section>
+		</div>
+		<script>
+			if ($('html').hasClass('no-details')) {
+				
+				var summary = $('details summary');
+
+				summary.siblings().wrapAll('<div class="slide"></div>');
+
+				$('details:not(.open) summary').siblings('div').hide();
+
+				summary.click(function() { 
+					$(this).siblings('div').toggle();
+	          			$('details').toggleClass('open');
+       			});
+			 }
+		</script>
+
+	</body>
+</html>

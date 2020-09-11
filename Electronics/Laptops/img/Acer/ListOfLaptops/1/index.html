@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Product Page</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+		<script src="scripts/jquery.js"></script>
+		
+		<script src="scripts/modernizr.js"></script>
+	</head>
+	<body>
+		<div class="product clear">
+			<header>
+				<hgroup>
+					<h1> Acer Extensa 15 EX215-52 </h1>
+					<h4>The most amazing iPhone yet.</h4>
+				</hgroup>
+			</header>
+			<figure>
+				<img src="images/1.jpg">
+			</figure>
+			<section>
+				<p> SKU IN-UN.EG8SI.002 10th Gen Intel® CoreTM i3-1005G1 processor Windows 10 Home 64-bit</p>
+				<details>
+					<summary>Product Features</summary>
+						<ul>
+							<li> 10th Gen Intel® CoreTM i3-1005G1 processor </li>
+							<li> Windows 10 Home 64-bit </li>
+							<li> 8 GB of DDR4 RAM, upgradable to 12 GB of dual-channel DDR4 RAM using a single soDIMM module </li>
+							<li> 39.6 cm (15.6") Full HD 1920 x 1080, high-brightness Acer ComfyView™ LED-backlit TFT LCD </li>
+							<li> 1 TB 2.5-inch 5400 RPM </li>
+							<li> MRP : ₹55,000.00 </li>
+						</ul>
+				</details>
+				<button>Buy Now</button> 
+			</section>
+		</div>
+		<script>
+			if ($('html').hasClass('no-details')) {
+				
+				var summary = $('details summary');
+
+				summary.siblings().wrapAll('<div class="slide"></div>');
+
+				$('details:not(.open) summary').siblings('div').hide();
+
+				summary.click(function() { 
+					$(this).siblings('div').toggle();
+	          			$('details').toggleClass('open');
+       			});
+			 }
+		</script>
+
+	</body>
+</html>

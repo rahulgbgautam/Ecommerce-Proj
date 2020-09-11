@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Product Page</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+		<script src="scripts/jquery.js"></script>
+		
+		<script src="scripts/modernizr.js"></script>
+	</head>
+	<body>
+		<div class="product clear">
+			<header>
+				<hgroup>
+					<h1> Acer Swift 3 </h1>
+					<h4>The most amazing Laptop yet.</h4>
+				</hgroup>
+			</header>
+			<figure>
+				<img src="images/6.jpg">
+			</figure>
+			<section>
+				<p> Acer Swift 3 Thin & Laptop With 4G LTE SIM Card Support | SF313-51-30EP </p>
+				<details>
+					<summary>Product Features</summary>
+						<ul>
+							<li> Intel® CoreTM i3-8130U processor </li>
+							<li> Windows 10 Home 64-bit </li>
+							<li> 4 GB of single-channel, onboard DDR4 system memory,Upgradable up to 8 GB of dual-channel DDR4 system memory </li>
+							<li> 256 GB, PCIe Gen3, 8 Gb/s up to 4 lanes, NVMe </li>
+							<li> LTE Model (4G enabled) </li>
+							<li> MRP : ₹59999.00 (Inclusive of all taxes) </li>
+						</ul>
+				</details>
+				<button>Buy Now</button>    				<button>Buy Now</button> 
+			</section>
+		</div>
+		<script>
+			if ($('html').hasClass('no-details')) {
+				
+				var summary = $('details summary');
+
+				summary.siblings().wrapAll('<div class="slide"></div>');
+
+				$('details:not(.open) summary').siblings('div').hide();
+
+				summary.click(function() { 
+					$(this).siblings('div').toggle();
+	          			$('details').toggleClass('open');
+       			});
+			 }
+		</script>
+
+	</body>
+</html>

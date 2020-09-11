@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Sports Bikes </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            color: #333;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+        }
+
+        .column {
+            margin: 15px 15px 0;
+            padding: 0;
+            margin-left: 11.0em;
+            margin-top: 2em;
+        }
+
+        .column:last-child {
+            padding-bottom: 60px;
+        }
+
+        .column::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+
+        .column div {
+            position: relative;
+            float: left;
+            width: 300px;
+            height: 200px;
+            margin: 0 0 0 25px;
+            padding: 0;
+        }
+
+        .column div:first-child {
+            margin-left: 0;
+        }
+
+        .column div span {
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            z-index: -1;
+            display: block;
+            width: 300px;
+            margin: 0;
+            padding: 0;
+            color: #444;
+            font-size: 18px;
+            text-decoration: none;
+            text-align: center;
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+            opacity: 0;
+        }
+
+        figure {
+            width: 300px;
+            height: 200px;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            overflow: hidden;
+        }
+
+        figure:hover+span {
+            bottom: -36px;
+            opacity: 1;
+        }
+
+
+        /* Circle */
+        .hover15 figure {
+            position: relative;
+        }
+
+        .hover15 figure::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            display: block;
+            content: '';
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, .2);
+            border-radius: 100%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+
+        .hover15 figure:hover::before {
+            -webkit-animation: circle .75s;
+            animation: circle .75s;
+        }
+
+        @keyframes circle {
+            0% {
+                opacity: 1;
+            }
+
+            40% {
+                opacity: 1;
+            }
+
+            100% {
+                width: 200%;
+                height: 200%;
+                opacity: 0;
+            }
+        }
+
+        img{
+
+            height: 15em;
+            width: 22em;
+        }
+        
+    </Style>
+
+</head>
+
+<body>
+
+    <body style="background-color:#aaa;">
+
+        <div class="hover15 column">
+
+            <div  onclick="window.location='file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Sports%20Bike%20and%20More/Sports%20Bikes/BMW/List/bikes.html';">
+                <figure><img src="BMW/1.jpg" /></figure>
+                <span> BMW </span>
+            </div>
+
+
+            <div  onclick="window.location='file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Sports%20Bike%20and%20More/Sports%20Bikes/Ducati/List/bikes.html';">
+                <figure><img src="Ducati/1.jpg" /></figure>
+                <span> Ducati </span>
+            </div>
+
+
+
+            <div  onclick="window.location='file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Sports%20Bike%20and%20More/Sports%20Bikes/Harley-Davidson/List/bikes.html';">
+                <figure><img src="Harley-Davidson/1.jpg" /></figure>
+                <span> Harley-Davidson </span>
+            </div>
+
+
+        </div>
+
+
+        <div class="hover15 column">
+
+            <div  onclick="window.location='file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Sports%20Bike%20and%20More/Sports%20Bikes/Honda/List/bikes.html';">
+                <figure><img src="Honda/1.jpg" /></figure>
+                <span> Honda </span>
+            </div>
+
+
+            <div  onclick="window.location='file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Sports%20Bike%20and%20More/Sports%20Bikes/Kawasaki/List/bikes.html';">
+                <figure><img src="Kawasaki/1.jpg" /></figure>
+                <span> Kawasaki </span>
+            </div>
+
+
+
+            <div  onclick="window.location='file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Sports%20Bike%20and%20More/Sports%20Bikes/Suzuki/List/bikes.html';">
+                <figure><img src="Suzuki/1.jpg" /></figure>
+                <span>Suzuki</span>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="hover15 column">
+
+            <div  onclick="window.location='file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Sports%20Bike%20and%20More/Sports%20Bikes/Triumph/List/bikes.html';">
+                <figure><img src="Triumph/1.jpg" /></figure>
+                <span>Triumph</span>
+            </div>
+
+
+            <div  onclick="window.location='file:///C:/Users/RahulGB/Desktop/Ecommerce%20Proj/Sports%20Bike%20and%20More/Sports%20Bikes/Yamaha/List/bikes.html';">
+                <figure><img src="Yamaha/1.jpg" /></figure>
+                <span>Yamaha</span>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
